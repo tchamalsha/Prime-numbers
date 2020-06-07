@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1591513489 source:e:\c projects\prime numbers\main.c
+	<stdio.h>
+	<stdlib.h>
+
