@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-int main()
-{
-    int n,t=1;
+int main(){
+    int n, t=1, r=0;
     int fac=0;
-    int r=1;
     int index=0;
 
     //getting input here
