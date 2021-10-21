@@ -1,15 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-    int n,t=1;
+int main(){
+    int n, t=1, r=0;
     int fac=0;
-    int r=1;
-    int c=0;
+    int index=0;
+
+    //getting input here
     printf("Enter the number: ");
     scanf("%d",&n);
-    int fact[n];
+
     while (r<=n){
         if (n%r==0){
             fac=fac+1;
@@ -20,20 +19,15 @@ int main()
     int array[fac-1];
     while (t<=n){
         if (n%t==0){
-            array[c]=t;
-            c++;
+            array[index]=t;
+            index++;
         }
-
         t++;
     }
-    if (fac==2)
-        printf("%d is a prime number.\n",n);
-    else
-        printf("%d is not a prime number.\n",n);
+    printf("%d is %sa prime number.\n",n, fac==2?"":"not ");
 
-    printf("Facts of %d are: \n",n);
-   for(int i=0;i<fac;i++){
-        printf("%d\n",array[i]);
-   }
-
+    printf("Facts of %d are: ",n);
+    for(int i=0;i<fac;i++){
+        printf("%d, ",array[i]);
+    }
 }
