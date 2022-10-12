@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int n, t=1, r=0;
+    int n, t=1, r=1;
     int fac=0;
     int index=0;
 
@@ -11,11 +11,11 @@ int main(){
 
     while (r<=n){
         if (n%r==0){
-            fac=fac+1;
+            fac++;
         }
-
         r++;
     }
+
     int array[fac-1];
     while (t<=n){
         if (n%t==0){
